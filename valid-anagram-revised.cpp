@@ -12,6 +12,7 @@ int main()
 	string s = "anagram";
 	string t = "nagaram";
 	bool flag = validAnagram(s,t);
+	cout<[s[i] - 'a']<<endl;
 	if(flag)
 		cout<<"Valid anagram"<<endl;
 	else
