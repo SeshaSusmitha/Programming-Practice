@@ -57,16 +57,16 @@ bool containsDuplicate(vector<int>& nums)
 
 	/* Method 3 : Sorting the vector and check if adjacent elements are equal */
 
-	sort(nums.begin(), nums.end());
-	int length = nums.size();
-	for(int i = 0; i < length; i++)
-	{
-		if(nums[i] == nums[i+1])
-		{
-			return true;
-		}
-	}
-	return false;
+	// sort(nums.begin(), nums.end());
+	// int length = nums.size();
+	// for(int i = 0; i < length; i++)
+	// {
+	// 	if(nums[i] == nums[i+1])
+	// 	{
+	// 		return true;
+	// 	}
+	// }
+	// return false;
 
 
 }
