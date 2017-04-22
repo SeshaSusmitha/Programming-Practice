@@ -1,6 +1,5 @@
 /**************************************************************************************
-**************** Program to delete all instances of a given element *******************
-******* Program URL : https://leetcode.com/problems/remove-element/#/description ******/
+*************************** Binary Search Implementataion *****************************/
 
 #include <iostream>
 #include <algorithm>
