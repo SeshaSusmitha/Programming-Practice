@@ -3,27 +3,50 @@
 #include <iostream>
 using namespace std;
 
-class printData
+class Box
 {
+	private:
+		double length;
+		double breadth;
+
 	public:
-		void print(int n)
+		double getArea()
 		{
-			cout<<"printing int "<<n<<endl;
+			return length * breadth;
 		}
-		void print(double d)
+		void setLength(double len)
 		{
-			cout<<"printing float "<<d<<endl;
+			length = len;
 		}
-		void print(string c)
+		void setBreadth(double bre)
 		{
-			cout<<"printing string "<<c<<endl;
+			breadth = bre;
+		}
+
+		Box operator+(const Box& b)
+		{
+			Box box;
+			box.length = this->length + b.length;
+			box.breadth = this->breadth + b.breadth;
+			return box;
 		}
 };
 
 int main()
 {
-	printData p;
-	p.print(4);
-	p.print(8.8);
-	p.print("Hello World");
+	Box b1;
+	Box b2;
+	Box b3;
+
+	b1.setLength(4.4);
+	b1.setBreadth(2.2);
+
+	b2.setLength(8.8);
+	b2.setBreadth(1.1);
+
+	b3 = b1 + b2;
+	int area = b3.getArea();
+	cout<<"Area of box3 = "<<area<<endl;
+
+
 }
