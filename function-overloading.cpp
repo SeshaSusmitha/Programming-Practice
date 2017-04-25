@@ -1,4 +1,4 @@
-/* Function implementing operator overloading */
+/* Function implementing function overloading */
 
 #include <iostream>
 using namespace std;
